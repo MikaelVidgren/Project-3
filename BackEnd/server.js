@@ -2,7 +2,10 @@ const express = require("express")
 const dotenv = require("dotenv").config()
 //USAGE IS TO BRING ERROR HANDLER HERE FROM MIDDLEWARE FOLDER
 const {errorHandler} = require("./middleware/errorMiddleware")
+const connectDB = require("./config/db")
 const port = process.env.PORT || 5000
+
+connectDB()
 
 const app = express()
 
