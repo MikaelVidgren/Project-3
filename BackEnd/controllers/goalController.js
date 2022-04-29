@@ -1,21 +1,21 @@
 const asyncHandler = require("express-async-handler");
-
+//PLACEHOLDER CONST "Goal", frontend will probably be music API.
 const Goal = require("../models/goalModel");
 
-//comment placeholder
+//returns all documents
 const getGoals = asyncHandler(async (req, res) => {
-  const goals = await Goal.find();
-  res.status(200).json(goals);
+  const getall = await Goal.find();
+  res.status(200).json(getall);
 });
 
-//comment placeholder
+//return one item with given id
 const getGoal = asyncHandler(async (req, res) => {
   res.status(200).json({ message: "Get goal " + req.params.id });
 });
 
-//comment placeholder
+//Create new item
 const setGoal = asyncHandler(async (req, res) => {
-  //if comment (actually checking if not with !-mark)
+  //if comment (actually checking if not with !-mark) if empty text, will throw error
   if (!req.body.text) {
     res.status(400);
     throw new Error("Add text");
@@ -28,10 +28,10 @@ const setGoal = asyncHandler(async (req, res) => {
   res.status(200).json(goal);
 });
 
-//comment placeholder
+//Delete item with id given
 const deleteGoal = asyncHandler(async (req, res) => {
   const goal = await Goal.findById(req.params.id);
-
+//if no goal found throw error
   if (!goal) {
     res.status(400);
     throw new Error("Goal not found");
@@ -42,7 +42,7 @@ const deleteGoal = asyncHandler(async (req, res) => {
   res.status(200).json({ id: req.params.id });
 });
 
-//comment placeholder
+//Updates item with given id
 const updateGoal = asyncHandler(async (req, res) => {
   const goal = await Goal.findById(req.params.id);
 
@@ -57,6 +57,7 @@ const updateGoal = asyncHandler(async (req, res) => {
 
   res.status(200).json(updatedGoal);
 });
+//Export routes from goalRoutes.js file
 module.exports = {
   getGoals,
   getGoal,

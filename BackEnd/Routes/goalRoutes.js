@@ -8,10 +8,11 @@ router.get("/", getGoals)
 
 router.get("/:id", getGoal)
 
-router.post("/", setGoal)
+// /add route to work as sepcified in project 3 assingment
+router.post("/add", setGoal)
 
-router.put("/:id", updateGoal)
+router.put("/update/:id", updateGoal)
 
-router.delete("/:id", deleteGoal)
+router.delete("/delete/:id", deleteGoal)
 
 module.exports = router
