@@ -14,6 +14,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 // "/api/getall" usage to get all items, "./routes/goalroutes" used to connect to route file for working routes
 app.use("/api/getall", require("./Routes/goalRoutes"))
+app.use("/api/users", require("./Routes/userRoutes"))
 
 // Use this and not the default express error handler
 app.use(errorHandler)
