@@ -71,7 +71,5 @@ function Register() {
         </form>
       </section>
     </div>
-  );
-}
 
 export default Register;
