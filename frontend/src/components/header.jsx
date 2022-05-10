@@ -1,5 +1,5 @@
 //for icons
-import { FaSignInAlt, FaSignOutAlt, FaUser } from "react-icons/fa";
+
 import { Link } from "react-router-dom";
 
 function header() {
@@ -11,12 +11,12 @@ function header() {
       <ul>
         <li>
           <Link to="/login">
-            <FaSignInAlt /> Login
+             Login
           </Link>
         </li>
         <li>
           <Link to="/register">
-            <FaUser /> Register
+             Register
           </Link>
         </li>
       </ul>
