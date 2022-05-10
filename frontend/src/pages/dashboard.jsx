@@ -3,5 +3,5 @@ function dashboard() {
     <div>DASHBOARD</div>
   )
 }
-
+//exports
 export default dashboard

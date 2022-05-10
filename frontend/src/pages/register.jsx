@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-//for icons
+//pick something from state (exmaple user), Dispatch is for dispatching (example thunk)
 
 
 function Register() {
@@ -71,5 +71,7 @@ function Register() {
         </form>
       </section>
     </div>
+  );
+}
 
 export default Register;
