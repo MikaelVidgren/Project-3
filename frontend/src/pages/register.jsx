@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 //for icons
-import { FaUser } from "react-icons/fa";
+
 
 function Register() {
   //FORM FOR REGISTERATION
@@ -26,7 +26,7 @@ function Register() {
     <div>
       <section>
         <h1>
-          <FaUser /> Register
+          Register
         </h1>
         <p>Below you can create account for setting goals</p>
       </section>

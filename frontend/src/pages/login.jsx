@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 //for icons
-import { FaSignInAlt } from "react-icons/fa";
+
 
 function Login() {
   //FORM FOR REGISTERATION
@@ -25,7 +25,7 @@ function Login() {
     <div>
       <section>
         <h1>
-          <FaSignInAlt /> Login
+          Login
         </h1>
         <p>Login to set goals</p>
       </section>
